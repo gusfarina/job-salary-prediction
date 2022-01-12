@@ -29,3 +29,5 @@
     http://localhost:8080/api/predict
 
 ### Pass the prediction parameter in the header of the POST request
+
+    Take a look at the example image called "api_usage_example.png" on this project
