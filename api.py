@@ -28,7 +28,7 @@ app.config["DEBUG"] = False
 @app.route('/api/predict', methods=['POST'])
 @cross_origin()
 def job_salary_prediction():
-    title = request.args.get('title')
+    title = request.headers.get('title')
     full_description = request.headers.get('full_description')
     location_normalized = request.headers.get('location_normalized')
     contract_time = request.headers.get('contract_time')
