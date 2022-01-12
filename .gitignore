@@ -130,3 +130,7 @@ dmypy.json
 
 # Datasets folder
 datasets/
+
+# Pickled model and word_vec
+model
+word_vec
