@@ -1,12 +1,8 @@
-# import jwt
-# import logging
 from flask import Flask
 from flask import request
 from flask import jsonify
 from flask_cors import CORS, cross_origin
 from job_sal_pred_class import SalaryPredictor
-# from db_logger import DBHandler
-# import settings
 
 log_error_level = 'WARNING'
 app = Flask("Gria Job Prediction Model")
