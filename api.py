@@ -14,16 +14,6 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config["DEBUG"] = False
 
-# logging.basicConfig(filename="smarthooks_ds_api.log")
-
-# def log(db_name, message):
-#     db_handler = DBHandler(settings.DB_HOST, db_name)
-#     logging.getLogger(__name__).addHandler(db_handler)
-#     logger = logging.getLogger(__name__)
-#     logger.setLevel(log_error_level)
-#     logger.exception(message)
-#     logging.getLogger(__name__).removeHandler(db_handler)
-
 
 @app.route('/api/predict', methods=['POST'])
 @cross_origin()
